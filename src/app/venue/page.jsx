@@ -15,7 +15,7 @@ export default function Page() {
 
     const venueApi = async () => {
         try {
-            const response = await axios.get("https://admin.winrh2026.org/api/venue");
+            const response = await axios.get("https://admin.nursexcel-summit.org/api/venue");
             console.log(response, 'ghnfgh');
             setVenue(response.data?.data[0]);
         } catch (error) {
@@ -83,7 +83,7 @@ export default function Page() {
                     <div className="imgCon">
 
                         <Image
-                            src={`https://admin.winrh2026.org${venue?.image1}`}
+                            src={`https://admin.nursexcel-summit.org${venue?.image1}`}
                             alt={"accomidation"}
                             width={380}
                             height={250}
@@ -91,7 +91,7 @@ export default function Page() {
                         />
 
                         <Image
-                            src={`https://admin.winrh2026.org${venue?.image2}`}
+                            src={`https://admin.nursexcel-summit.org${venue?.image2}`}
                             alt={"accomidation"}
                             width={380}
                             height={250}
@@ -99,7 +99,7 @@ export default function Page() {
                         />
 
                         <Image
-                            src={`https://admin.winrh2026.org${venue?.image3}`}
+                            src={`https://admin.nursexcel-summit.org${venue?.image3}`}
                             alt={"accomidation"}
                             width={380}
                             height={520}
@@ -109,9 +109,9 @@ export default function Page() {
                         {/* <img className="imgVenue"
                             src={} alt="accomidation" />
                         <img className="imgVenue"
-                            src={`https://admin.winrh2026.org${venue?.image2}`} alt="accomidation" />
+                            src={`https://admin.nursexcel-summit.org${venue?.image2}`} alt="accomidation" />
                         <img className="imgVenue"
-                            src={`https://admin.winrh2026.org${venue?.image3}`} alt="accomidation" /> */}
+                            src={`https://admin.nursexcel-summit.org${venue?.image3}`} alt="accomidation" /> */}
 
                     </div>
                 </div>

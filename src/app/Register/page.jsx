@@ -43,7 +43,7 @@ export default function PlansPage() {
 
   const guideApi = async () => {
     try {
-      const response = await axios.get("https://admin.winrh2026.org/api/guide-plans");
+      const response = await axios.get("https://admin.nursexcel-summit.org/api/guide-plans");
       console.log(response, 'ghnfgh');
       setGuide(response.data);
     } catch (error) {
@@ -75,7 +75,7 @@ useEffect(() => {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
-  axios.get("https://admin.winrh2026.org/api/getPlans").then(({ data }) => {
+  axios.get("https://admin.nursexcel-summit.org/api/getPlans").then(({ data }) => {
     const updated = data.map((plan) => {
       const start = new Date(plan.startDate);
       const end = new Date(plan.endDate);
@@ -94,7 +94,7 @@ useEffect(() => {
     if (active) setActivePlanId(active._id);
   });
 
-    axios.get("https://admin.winrh2026.org/api/getAccommodations").then((response) => setAccommodations(response.data));
+    axios.get("https://admin.nursexcel-summit.org/api/getAccommodations").then((response) => setAccommodations(response.data));
 }, []);
 
   // Update total price whenever participant or accommodation changes
@@ -169,7 +169,7 @@ useEffect(() => {
       };
 
       // Send data to the backend
-      const response = await axios.post("https://admin.winrh2026.org/api/register-and-pay", {
+      const response = await axios.post("https://admin.nursexcel-summit.org/api/register-and-pay", {
         formData,
         selectedPlan: selectedPlanDetails,
         selectedAccommodations:selectedAccommodation,
@@ -485,7 +485,7 @@ useEffect(() => {
                 createOrder={async (data, actions) => {
                   try {
                     const response = await axios.post(
-                      "https://admin.winrh2026.org/api/create-paypal-order",
+                      "https://admin.nursexcel-summit.org/api/create-paypal-order",
                       {
                         formData,
                         selectedPlan: {
@@ -506,7 +506,7 @@ useEffect(() => {
                 }}
                 onApprove={async (data) => {
                   try {
-                    const response = await axios.post("https://admin.winrh2026.org/api/capture-paypal-order", {
+                    const response = await axios.post("https://admin.nursexcel-summit.org/api/capture-paypal-order", {
                       orderID: data.orderID,
                     });
                 

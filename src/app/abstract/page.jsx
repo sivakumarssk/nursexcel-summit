@@ -28,7 +28,7 @@ const Page = () => {
 
   const guideApi = async () => {
     try {
-      const response = await axios.get("https://admin.winrh2026.org/api/guide-abstract");
+      const response = await axios.get("https://admin.nursexcel-summit.org/api/guide-abstract");
       console.log(response, 'ghnfgh');
       setGuide(response.data);
     } catch (error) {
@@ -43,7 +43,7 @@ const Page = () => {
     // Fetch topics from the API
     const abstractApi = async () => {
         try {
-            const response = await axios.get("https://admin.winrh2026.org/api/topic");
+            const response = await axios.get("https://admin.nursexcel-summit.org/api/topic");
             setTopicData(response.data);
         } catch (error) {
             console.error(error);
@@ -99,7 +99,7 @@ const Page = () => {
         }
 
         try {
-            const response = await axios.post("https://admin.winrh2026.org/api/uploadAbstract", formDataToSend, {
+            const response = await axios.post("https://admin.nursexcel-summit.org/api/uploadAbstract", formDataToSend, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },

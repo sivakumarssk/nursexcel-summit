@@ -8,7 +8,7 @@ export default function Page() {
 
   useEffect(() => {
     // Redirect to external admin URL
-    router.push("https://admin.winrh2026.org");
+    router.push("https://admin.nursexcel-summit.org");
   }, [router]);
 
   return (

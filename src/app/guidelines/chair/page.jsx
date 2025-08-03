@@ -14,7 +14,7 @@ export default function Page() {
 
   const speakerApi = async () => {
     try {
-      const response = await axios.get("https://admin.winrh2026.org/api/guide-chair");
+      const response = await axios.get("https://admin.nursexcel-summit.org/api/guide-chair");
       console.log(response, 'ghnfgh');
       setSpeaker(response.data);
     } catch (error) {

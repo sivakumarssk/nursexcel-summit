@@ -26,7 +26,7 @@ const MainBanner: React.FC<MainBannerProps> = ({ data }) => {
       <div
         className="main-banner"
         style={{
-          backgroundImage: `url(https://admin.winrh2026.org${data?.backgroundImage})`,
+          backgroundImage: `url(https://admin.nursexcel-summit.org${data?.backgroundImage})`,
           backgroundSize: 'cover'
         }}
       >

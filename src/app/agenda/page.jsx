@@ -16,10 +16,10 @@ const AgendaPage = () => {
     useEffect(() => {
         const fetchAgendas = async () => {
             try {
-                const response = await axios.get("https://admin.winrh2026.org/api/getAgenda");
+                const response = await axios.get("https://admin.nursexcel-summit.org/api/getAgenda");
                 setAgendas(response.data.agendas || []);
                 if (response.data.agendas?.length) {
-                    setSelectedPdf(`https://admin.winrh2026.org${response.data.agendas[0].pdf}`); // Set the first PDF as default
+                    setSelectedPdf(`https://admin.nursexcel-summit.org${response.data.agendas[0].pdf}`); // Set the first PDF as default
                 }
             } catch (error) {
                 console.error("Error fetching agendas:", error);
@@ -31,7 +31,7 @@ const AgendaPage = () => {
     }, []);
 
     const handleDateClick = (pdfUrl) => {
-        setSelectedPdf(`https://admin.winrh2026.org${pdfUrl}`);
+        setSelectedPdf(`https://admin.nursexcel-summit.org${pdfUrl}`);
     };
 
     console.log(selectedPdf);

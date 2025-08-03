@@ -14,7 +14,7 @@ export default function Page() {
 
   const speakerApi = async () => {
     try {
-      const response = await axios.get("https://admin.winrh2026.org/api/privacy");
+      const response = await axios.get("https://admin.nursexcel-summit.org/api/privacy");
       console.log(response, 'ghnfgh');
       setPrivacy(response.data);
     } catch (error) {

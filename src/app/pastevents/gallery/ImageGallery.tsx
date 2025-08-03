@@ -32,7 +32,7 @@ const ImageGallery: React.FC<MainBannerProps> = ({ data }) => {
               <div className="col-lg-3 col-sm-6" style={{marginBottom:'20px'}} key={index}>
                 <div className="speaker-card">
                   <Image
-                    src={`https://admin.winrh2026.org${speaker}`}
+                    src={`https://admin.nursexcel-summit.org${speaker}`}
                     alt={speaker.name}
                     width={250}
                     height={250}

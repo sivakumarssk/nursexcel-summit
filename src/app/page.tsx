@@ -33,7 +33,7 @@ export default function Home() {
 
   const homeApi = async (): Promise<void> => {
     try {
-      const response = await axios.get("https://admin.winrh2026.org/api/");
+      const response = await axios.get("https://admin.nursexcel-summit.org/api/");
       // console.log(response,'ghnfgh');
       setHomeData(response.data);
     } catch (error: any) {
@@ -44,7 +44,7 @@ export default function Home() {
 
   const imageApi = async (): Promise<void> => {
     try {
-      const response = await axios.get("https://admin.winrh2026.org/api/event-with-images");
+      const response = await axios.get("https://admin.nursexcel-summit.org/api/event-with-images");
       console.log(response, 'ghnfgh');
       setImageData(response.data);
     } catch (error: any) {

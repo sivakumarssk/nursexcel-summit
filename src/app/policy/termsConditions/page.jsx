@@ -14,7 +14,7 @@ export default function Page() {
 
   const speakerApi = async () => {
     try {
-      const response = await axios.get("https://admin.winrh2026.org/api/termsConditions");
+      const response = await axios.get("https://admin.nursexcel-summit.org/api/termsConditions");
       console.log(response, 'ghnfgh');
       setTermsConditions(response.data);
     } catch (error) {

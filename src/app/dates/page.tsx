@@ -18,7 +18,7 @@ export default function Page() {
 
     const dateApi = async (): Promise<void> => {
       try {
-        const response = await axios.get("https://admin.winrh2026.org/api/getdates");
+        const response = await axios.get("https://admin.nursexcel-summit.org/api/getdates");
         // console.log(response,'ghnfgh');
         setDateData(response.data.data);
       } catch (error: any) {

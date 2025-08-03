@@ -45,7 +45,7 @@ const Speakerskey: React.FC<MainBannerProps> = ({data}) => {
               <div className="col-lg-3 col-sm-6" key={index}>
                 <div className="single-speakers single-speakers-home" style={{marginBottom:'20px', marginInline:'30px'}}>
                   <Image
-                    src={`https://admin.winrh2026.org${speaker?.image}`}
+                    src={`https://admin.nursexcel-summit.org${speaker?.image}`}
                     alt={speaker?.name}
                     width={250}
                     height={300}

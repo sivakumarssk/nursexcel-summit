@@ -7,7 +7,7 @@ export const useDynamicMenus = () => {
   useEffect(() => {
     const fetchDynamicMenus = async () => {
       try {
-        const response = await axios.get("https://admin.winrh2026.org/api/menus"); // Replace with your dynamic menu API
+        const response = await axios.get("https://admin.nursexcel-summit.org/api/menus"); // Replace with your dynamic menu API
         setDynamicMenus(response.data.menus || []);
       } catch (error) {
         console.error("Error fetching dynamic menus:", error);

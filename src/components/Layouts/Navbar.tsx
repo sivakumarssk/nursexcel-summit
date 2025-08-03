@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
 
   const homeApi = async (): Promise<void> => {
     try {
-      const response = await axios.get("https://admin.winrh2026.org/api/");
+      const response = await axios.get("https://admin.nursexcel-summit.org/api/");
       // console.log(response,'ghnfgh');
       setHomeData(response.data);
     } catch (error: any) {
@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
 
   const fetchDynamicMenus = async () => {
     try {
-      const response = await axios.get('https://admin.winrh2026.org/api/menus');
+      const response = await axios.get('https://admin.nursexcel-summit.org/api/menus');
       // return response.data.menus;
       setDynamicMenus(response.data.menus)
     } catch (error) {
@@ -313,7 +313,7 @@ const menus = [
           <div className="container" style={{maxWidth:'1400px'}}>
             <Link href="/" className="navbar-brand">
               <Image
-                src={homeData?.logo ? `https://admin.winrh2026.org${homeData.logo}` : '/images/own/proxima.png'}
+                src={homeData?.logo ? `https://admin.nursexcel-summit.org${homeData.logo}` : '/images/own/proxima.png'}
                 alt="logo"
                 width={257}
                 height={257}

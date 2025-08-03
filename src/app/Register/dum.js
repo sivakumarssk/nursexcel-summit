@@ -28,7 +28,7 @@ export default function Page() {
 
   useEffect(() => {
     try {
-      axios.get("https://admin.winrh2026.org/api/getPlans").then((response) => setPlans(response.data));
+      axios.get("https://admin.nursexcel-summit.org/api/getPlans").then((response) => setPlans(response.data));
       
     } catch (error) {
       console.log(error);
@@ -58,7 +58,7 @@ const handleFileChange = (e) => {
 
 
   const handleSubmit = () => {
-    axios.post("https://admin.winrh2026.org/api/api/register", formData).then(() => alert("Registration successful!"));
+    axios.post("https://admin.nursexcel-summit.org/api/api/register", formData).then(() => alert("Registration successful!"));
   };
 
   return (

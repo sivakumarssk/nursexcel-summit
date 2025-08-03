@@ -28,7 +28,7 @@ const ContactForm: React.FC = () => {
     setFeedback(null);
 
     try {
-      const response = await fetch("https://admin.winrh2026.org/api/addContact", {
+      const response = await fetch("https://admin.nursexcel-summit.org/api/addContact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
